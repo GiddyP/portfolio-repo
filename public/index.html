@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+
+    <title>Giddy's Portfolio</title>
+</head>
+
+<body class="font-nunito bg-green-50 dark">
+    <div class="dark:bg-slate-900"">
+        <header
+        class=" h-1/2 lg:h-screen bg-gradient-to-t from-green-first dark:from-slate-800 dark:to-slate-900 relative
+        overflow-hidden">
+        <!-- navbar -->
+        <nav class="w-full fixed mt-2 top-0 z-10 bg-slate-700">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center text-white gap-2">
+                    <h4 class="font-pacifico">GiddyP<span class="text-orange-200">_wild</span></h4>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-200 dark:text-gray-100 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-100">
+                        <a href="#">homepage</a>
+                    </li>
+                    <li class="hover:text-gray-100">
+                        <a href="#about">about me</a>
+                    </li>
+                    <li class="hover:text-gray-100">
+                        <a href="#works">works</a>
+                    </li>
+                    <li class="hover:text-gray-100">
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+
+                <img id="moon" src="https://www.svgrepo.com/show/3158/moon.svg"
+                    class="hidden md:block w-8 h-8 cursor-pointer" alt="" />
+                <!-- hamburger  -->
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <ul id="menu"
+                    class="hidden right-0 bg-green-second absolute left-auto top-0 w-1/2 p-10 mt-3 rounded-b-3xl space-y-10 text-white text-center shadow-lg">
+                    <li>
+                        <a id="hLink" href="#">homepage</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">about me</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#works">works</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro content -->
+        <!-- image -->
+        <img class="absolute top-14 md:top-18 md:top-20 bottom-0 right-0 lg:left-0 mx-auto h-full object-cover"
+            src="./imgs/IMG_8627 copy.png" alt="" />
+        <!-- circle -->
+        <div
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-full bg-purple-700 shadow-2xl rounded-full -z-10">
+        </div>
+        </header>
+        <div class="flex flex-row flex-col-2 space-x-50">
+            <!-- texts -->
+            <div
+                class="hidden shrink-0 lg:flex flex-col gap-5 rounded-md shadow-lg absolute bottom-3 mx-auto left-3 bg-white dark:bg-slate-900 dark:shadow-slate-800 dark:text-slate-100 p-6 max-h-fit w-1/3">
+                <h1 class="text-4xl font-bold text-indigo-900 dark:text-white">Hello, I'm Gideon</h1>
+                <p class="text-slate-900 dark:text-gray-400">
+                    I code web sites with proficiency in HTML, CSS, and JavaScript. I also create robots, scripts, and
+                    forex
+                    indicators for
+                    use in financial transactions.
+                </p>
+                <a class="bg-purple-700 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">
+                    <div class="mx-auto flex mr-2">
+                        <div>
+                            <img class="p-0 mt-1 h-5 w-6" src="https://www.svgrepo.com/show/164430/hand.svg" alt="">
+                        </div>
+                        <!-- Hire Me  -->
+                        <span class="p-0 ml-1 h-6">Contact</span>
+                    </div>
+                </a>
+            </div>
+            <!-- animated text -->
+            <div
+                class="hidden sm:block absolute top-64 sm:top-60 lg:top-auto md:-left-60 text-2xl lg:bottom-9 ml-5 sm:text-4xl md:ml-96 md:mt-0 md:text-4xl lg:text-6xl lg:left-1 xl:left-48 xl:text-6xl xxl:text-9xl font-bold">
+
+                <p id="career" class="text-orange-400 font-mono"></p>
+            </div>
+        </div>
+        <!-- About Me  -->
+        <div id="about" class="my-24 px-6 mx-auto">
+
+            <!-- Section: Design Block -->
+            <section class="mb-32">
+
+                <style>
+                    @media (min-width: 992px) {
+                        #cta-img-nml-50 {
+                            margin-left: 30px;
+                        }
+                    }
+                </style>
+
+                <div class="flex flex-wrap">
+                    <!-- Image  -->
+                    <div class="p-0 grow-0 shrink-0 basis-auto h-full w-full lg:w-5/12 mb-12 lg:mb-0 rounded-lg">
+                        <div class="">
+                            <img src="imgs/laptopImage.jpg"
+                                class="h-fit p-6 lg:pl-6 items-center shadow-lg rounded-lg bg-yellow-300"
+                                id="cta-img-nml-50" style="z-index: 10" alt="aboutImage" />
+                        </div>
+                    </div>
+
+                    <div class="basis-auto h-full w-full lg:w-7/12">
+                        <!-- accordion-elements  -->
+                        <div class="bg-yellow-500 shadow- h-fit mt-3 rounded-lg p-6 lg:pl-6 text-black items-center lg:text-left accordion accordion-flush"
+                            id="accordionFlushExample">
+                            <div
+                                class="flex  accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                                <h2 class="mb-0 mx-auto text-3xl my-3 font-semibold">
+                                    About Me
+                                </h2>
+
+                            </div>
+
+                            <div
+                                class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                                <h2 class="accordion-header mb-0" id="flush-headingOne">
+                                    <button class="accordion-button
+                            relative
+                            flex
+                            items-center
+                            w-full
+                            py-4
+                            px-5
+                            text-base text-gray-800 text-left
+                            bg-white
+                            border-0
+                            rounded-none
+                            transition
+                            focus:outline-none" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        MQL5
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse border-0 collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-4 px-5">For automated trading, I create expert
+                                        advisors,
+                                        indicators, and forex algorithms using the MetaQuotes Language 5
+                                        (MQL5).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                                <h2 class="accordion-header mb-0" id="flush-headingTwo">
+                                    <button class="accordion-button
+                            collapsed
+                            relative
+                            flex
+                            items-center
+                            w-full
+                            py-4
+                            px-5
+                            text-base text-gray-800 text-left
+                            bg-white
+                            border-0
+                            rounded-none
+                            transition
+                            focus:outline-none" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        JavaScript
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-4 px-5">I create the front-end of responsive and
+                                        interactive websites using
+                                        JavaScript technology so they may offer and support the success of goods
+                                        and services in the contemporary marketplace.
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                                <h2 class="accordion-header mb-0" id="flush-headingTwo">
+                                    <button class="accordion-button
+                            collapsed
+                            relative
+                            flex
+                            items-center
+                            w-full
+                            py-4
+                            px-5
+                            text-base text-gray-800 text-left
+                            bg-white
+                            border-0
+                            rounded-none
+                            transition
+                            focus:outline-none" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        CSS AND HTML5
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse border-0 collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-4 px-5">I produce webpages using the Casadeing Style
+                                        Sheet
+                                        and HyperText Markup Language 5. The frameworks I use to create these
+                                        slick and exquisite web pages are Bootstrap and Tailwind.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+            <!-- Section: Design Block -->
+
+        </div>
+        <!-- Works  -->
+        <div id="works" class="py-4">
+            <div class="container mx-auto">
+                <!-- top  -->
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="text-3xl font-semibold dark:text-white">Works & Projects</h1>
+                    <p class=" w-1/2 text-center text-gray-500 dark:text-gray-300">
+                        I'm a proficient HTML, CSS, and JavaScript web developer. I also write MQL5 robots, scripts, and
+                        forex indicators for
+                        use in business.
+                    </p>
+                </div>
+                <!-- bottom  -->
+                <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                    <!-- cards -->
+                    <div class="w-full dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div
+                        class="w-full bg-amber-50 dark:bg-slate-700 md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-5 my-3 md:my-10 m-1">
+                        <img src="./imgs/works-pics.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact me -->
+        <div id="contact"
+            class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <section class="w-full">
+                <h2 id="hire" class="text-4xl dark:text-gray-200 font-bold">Contact</h2>
+                <p class="text-gray-700 text-2xl dark:text-gray-300">Any of the methods listed here are welcome to be
+                    used to get
+                    in touch with me.
+                </p>
+
+                <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-12">
+                    <div class="space-y-12 mb-10">
+                        <div>
+                            <label class="text-black dark:text-gray-200 block mb-6 text-xl font-bold">Name</label>
+                            <input
+                                class="w-full ring-1 ring-indigo-300 rounded-sm border border-input-border bg-input px-4 py-4">
+                        </div>
+                        <div>
+                            <label class="text-black dark:text-gray-200 block mb-6 text-xl font-bold">Email</label>
+                            <input type="email"
+                                class="ring-1 ring-indigo-300 rounded-s w-full border border-input-border bg-input px-4 py-4">
+                        </div>
+                        <div>
+                            <label class="text-black dark:text-gray-200 block mb-6 text-xl font-bold">Message</label>
+                            <textarea type="text"
+                                class="ring-1 ring-indigo-300 rounded-s w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
+                        </div>
+
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+                            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Reach
+                            out</button>
+                    </div>
+
+                    <div class="mt-12 mb-6 dark:text-slate-400">
+                        <!-- Contact info -->
+                        <div class="flex">
+                            <span>
+                                <img class="p-0 mt-1 h-4 w-6 mr-2"
+                                    src="https://www.svgrepo.com/show/37491/telephone.svg" alt="">
+                            </span>
+                            <a class="text-secondary hover:underline" href="07067174101"
+                                type="tel">(+234)07067174101</a>
+                            <span class="mx-2">or</span>
+                            <a class="text-secondary hover:underline" href="09153253675"
+                                type="tel">(+234)09153253675</a>
+                        </div>
+                        <div class="flex">
+                            <span>
+                                <img class="p-0 mt-1 h-4 w-6 mr-2" src="https://www.svgrepo.com/show/32285/email.svg"
+                                    alt="">
+                            </span>
+                            <span class="block">Email: <a href="https://giddygbenga4@gmail.com"
+                                    class="text-secondary hover:text-blue-600 underline">giddygbenga4@gmail.com</a></span>
+                        </div>
+                        <div class="flex">
+                            <span>
+                                <img class="p-0 mt-1 h-4 w-6 mr-2"
+                                    src="https://www.svgrepo.com/show/128403/linkedin.svg" alt="">
+                            </span>
+                            <span class="block">linkedin: <a href="https://www.linkedin.com/in/gideon-adegunle"
+                                    class="text-secondary hover:text-blue-600 underline">www.linkedin.com/in/gideon-adegunle</a></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!-- footer  -->
+    <footer class="w-full bg-gray-800 mt-2">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="gap-2 text-white">
+                <span class="md:block font-medium">© 2022</span>
+            </div>
+
+            <div class="flex items-center text-white gap-2">
+                <h4 class="font-pacifico">GiddyP<span class="text-orange-200">_wild</span></h4>
+            </div>
+
+            <div class="flex gap-2">
+                <img class="w-4 cursor-not-allowed" src="./img/facebook.png" alt="">
+                <img class="w-4 cursor-not-allowed" src="./img/instagram.png" alt="">
+                <img class="w-4 cursor-not-allowed" src="./img/twitter.png" alt="">
+                <img class="w-4 cursor-not-allowed" src="./img/linkedin.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+</body>
+
+</html>
